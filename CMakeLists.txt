@@ -23,10 +23,11 @@ set(SRC_LIST
     main.cpp
 )
 
-qt4_automoc(${SRC_LIST})
+#qt4_wrap_cpp(MOC ${SRC_LIST})
+qt4_generate_moc(main.cpp ${CMAKE_CURRENT_BINARY_DIR}/main.moc)
 
 add_executable(${PROJECT_NAME}
-    ${SRC_LIST}
+    ${SRC_LIST} main.moc
 )
 
 target_link_libraries(${PROJECT_NAME}
