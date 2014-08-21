@@ -1,0 +1,3 @@
+[submodule "CppAwait"]
+	path = CppAwait
+	url = https://github.com/navrocky/CppAwait.git

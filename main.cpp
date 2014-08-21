@@ -56,7 +56,7 @@ void startAsyncAndForget(std::string tag, ut::Action func)
 void startAsyncOnPool(ut::Action func)
 {
     auto future = QtConcurrent::run(func);
-    future.
+//    future.
 }
 
 

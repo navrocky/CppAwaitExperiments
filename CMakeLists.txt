@@ -7,7 +7,8 @@ include_directories (${Boost_INCLUDE_DIRS})
 find_package (Qt4 REQUIRED QtCore)
 include(${QT_USE_FILE})
 
-set(CPPAWAIT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../CppAwait)
+#set(CPPAWAIT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../CppAwait)
+set(CPPAWAIT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/CppAwait)
 
 add_subdirectory(${CPPAWAIT_DIR} ${CMAKE_CURRENT_BINARY_DIR}/CppAwait)
 
